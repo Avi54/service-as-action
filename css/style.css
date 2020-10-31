@@ -1,0 +1,42 @@
+.nav-link{
+    font-size: 17px;
+}
+
+.jumbotron{
+    margin: 25px;
+}
+
+.left{
+    width: 500px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.middle{
+    width: 500px;
+    margin-top: 0px;
+}
+
+.right{
+    width: 500px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.big{
+    display: flex;
+}
+
+.bottom{
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .bottom{
+        display: block;
+        margin-top: 0px;
+    }
+    .right{
+        display: none;
+    }
+}

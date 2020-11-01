@@ -14,6 +14,14 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bc8719b568.js" crossorigin="anonymous"></script>
 
+    <style>
+        #fixedbutton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px; 
+}
+    </style>
+    
     <title>Resource Pool</title>
   </head>
   <body>
@@ -44,39 +52,51 @@
       </div>
     </nav>
 
+    <button onclick="goBack()" id="fixedbutton" class="btn btn-dark">Back</button>
+
     <div class="jumbotron p-4 p-md-5 text-white rounded bg-primary">
         <div class="col-md-10 px-0">
-          <h1 class="display-4 ">MYP 4</h1>
+          <h1 class="display-4 "><strong>I&S - MYP 4</strong></h1>
          <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
 <!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
         </div>
     </div>   
     
     <div class="big">
-        <a href="science4.html">
+        <a href="ins4/All Resources.docx">
         <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left">
             <div class="col-md-10 px-0">
-              <h1 class="display-4 ">Science</h1>
+              <h1 class="display-4 "><strong>All Resources Download</strong> <i class="fas fa-file-download"></i></h1>
 
              <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
     <!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
             </div>
         </div> 
         </a>
-        <a href="math4.html">
+        <a href="ins4/Industrialization and Technological Developments.docx">
             <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left">
                 <div class="col-md-10 px-0">
-                  <h1 class="display-4 ">Math</h1>
+                  <h1 class="display-4 "><strong>Industrialization and Technological Developments</strong> <i class="fas fa-file-download"></i></h1>
     
                  <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
         <!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
                 </div>
             </div> 
         </a>
-        <a href="ins4.html">
+        <a href="ins4/Resource Management.docx">
             <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left">
                 <div class="col-md-10 px-0">
-                  <h1 class="display-4 ">I&S</h1>
+                  <h1 class="display-4 "><strong>Resource Management</strong> <i class="fas fa-file-download"></i></h1>
+    
+                 <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+        <!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+                </div>
+            </div> 
+        </a>
+        <a href="ins4/Trade, aid, exchange and flows.docx">
+            <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left">
+                <div class="col-md-10 px-0">
+                  <h1 class="display-4 "><strong>Trade, aid, exchange and flows</strong> <i class="fas fa-file-download"></i></h1>
     
                  <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
         <!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
@@ -84,7 +104,13 @@
             </div> 
         </a>
       </div> 
- 
+
+
+      <script>
+        function goBack() {
+          window.history.back()
+        }
+        </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

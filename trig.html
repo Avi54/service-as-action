@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/myp4.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bc8719b568.js" crossorigin="anonymous"></script>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  overflow-x: hidden;
+  padding-top: 20px;
+  top: 53px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #818181;
+  display: block;
+  position: relative;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+#videos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+iframe{
+    border: none;
+}
+
+nav{
+  margin-top: 0;
+}
+
+.alternate{
+  display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+                                                                                                                                                                                          
+@media only screen and (max-width: 1281px) {
+ iframe{
+  width: 380px;
+  height: 275px;
+ }
+}
+
+@media only screen and (max-width: 1171px) {
+ iframe{
+  width: 340px;
+  height: 235px;
+ }
+}
+
+@media only screen and (max-width: 1191px) {
+ iframe{
+  width: 300px;
+  height: 195px;
+ }
+}
+
+
+#fixedbutton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px; 
+}
+
+
+@media only screen and (max-width: 992px) {
+  .sidenav{
+    display: none;
+  }
+  .alternate{
+  display: block;
+  }
+  .main{
+  display: none;
+}
+  .first{
+    display: none;
+  }
+  iframe{
+  width: 400px;
+  height: 295px;
+ 
+ }
+}
+
+@media only screen and (max-width: 500px) {
+  iframe{
+  width: 300px;
+  height: 195px;
+
+ }
+}
+
+@media only screen and (max-width: 361px) {
+  iframe{
+  width: 280px;
+  height: 165px;
+
+ }
+}
+
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Resource Pool</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="index.html"> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="feed.html">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="myp4.html">MYP 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">MYP 5</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<div class="sidenav">
+   <a href="#docs">Document</a>
+   <a href="#vids">Videos</a>
+   <a href="#prac">Practice</a>
+</div>
+
+<div class="main">
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-primary">
+        <div class="col-md-10 px-0">
+          <h1 class="display-4 ">Trignometry - Math - MYP 4</h1>
+         <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+<!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+        </div>
+        <button onclick="goBack()" id="fixedbutton" class="btn btn-dark">Back</button>
+    </div>   
+    
+    <div class="big">
+
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left" id="docs">
+            <div class="col-md-10 px-0">
+              <h1 class="display-4 ">Document</h1>
+
+             <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+    <!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+            </div>
+        </div> 
+
+        <a href="https://docs.google.com/document/d/1bvXg5EFX2CgYSb2FurnxXhN81FlZmWtgWhsZse5nmv4/edit?usp=sharing" target="_blank">
+            <div class="jumbotron p-4 p-md-5 text-white rounded bg-warning select left">
+                <div class="col-md-10 px-0">
+                  <h1 class="display-4 ">Trignometry</h1>
+                </div>
+            </div> 
+        </a>      
+        
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left" id="vids">
+            <div class="col-md-10 px-0">
+              <h1 class="display-4 ">Videos</h1>
+
+             <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+    <!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+            </div>
+        </div>   
+             
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-info select left">
+            <div id="videos">
+                <iframe width="420px" height="315px" 
+                src="https://www.youtube.com/embed/BI-rtfZVXy0" allowfullscreen = "allowfullscreen">
+                </iframe>
+                <iframe width="420px" height="315px"
+                src="https://www.youtube.com/embed/VXlFEilh-cw"  allowfullscreen = "allowfullscreen">
+                </iframe> 
+            </div>     
+            <div id="videos" style="margin-top: 50px;">
+                <iframe width="420px" height="315px"
+                src="https://www.youtube.com/embed/jWHOF6cFbpw"  allowfullscreen = "allowfullscreen">
+                </iframe>
+                
+            </div>        
+        </div> 
+
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left" id="prac">
+            <div class="col-md-10 px-0">
+              <h1 class="display-4 ">Practice</h1>
+
+             <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+    <!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+            </div>
+        </div>   
+
+        
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-warning select left">
+            <div class="whole">
+                <div style="margin-top: 20px;">
+                     <a href="https://mathsmadeeasy.co.uk/gcse-maths-revision/bearings-gcse-revision-and-worksheets/" target="_blank"><button class="btn-lg btn-outline-danger">Bearings</button></a>
+                     <a href="https://www.onlinemath4all.com/solving-word-problems-with-similar-triangles.html" target="_blank"><button class="btn-lg btn-outline-danger">Similarity</button></a>
+                     <a href="https://www.learncbse.in/congruence-of-triangles-class-7-extra-questions/" target="_blank"><button class="btn-lg btn-outline-danger">Congruence</button></a>
+                </div>
+            </div>
+         </div>  
+
+    </div> 
+
+    
+</div>
+
+<div class="alternate">
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-primary">
+    <div class="col-md-10 px-0">
+      <h1 class="display-4 ">Trignometry - Math - MYP 4</h1>
+     <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+<!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+    </div>
+</div>   
+
+<div class="big">
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left" id="docs">
+        <div class="col-md-10 px-0">
+          <h1 class="display-4 ">Document</h1>
+
+         <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+<!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+        </div>
+    </div> 
+
+    <a href="https://docs.google.com/document/d/1sohqT2GccQrxXKxsc0d9y2UIqZdxcAuEmSauDfI9nw0/edit?usp=sharing" target="_blank">
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-warning select left">
+            <div class="col-md-10 px-0">
+              <h1 class="display-4 ">Trignometry</h1>
+            </div>
+        </div> 
+    </a>    
+         
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left" id="vids">
+        <div class="col-md-10 px-0">
+          <h1 class="display-4 ">Videos</h1>
+
+         <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+<!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+        </div>
+    </div> 
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-info select left first" >
+        <div id="videos">
+            <iframe width="420px" height="315px"
+            src="https://www.youtube.com/embed/BI-rtfZVXy0" allowfullscreen = "allowfullscreen">
+            </iframe>
+            <iframe width="420px" height="315px"
+            src="https://www.youtube.com/embed/VXlFEilh-cw" allowfullscreen = "allowfullscreen">
+            </iframe> 
+        </div>     
+        <div id="videos" style="margin-top: 50px;">
+            <iframe width="420px" height="315px"
+            src="https://www.youtube.com/embed/jWHOF6cFbpw" allowfullscreen = "allowfullscreen">
+            </iframe>    
+        </div>        
+    </div> 
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-info select left next" >
+        <div id="videos">
+            <iframe width="420px" height="315px"
+            src="https://www.youtube.com/embed/BI-rtfZVXy0" allowfullscreen = "allowfullscreen">
+            </iframe>
+        </div>
+        <div id="videos" style="margin-top: 20px;">
+        <iframe width="420px" height="315px"
+        src="https://www.youtube.com/embed/VXlFEilh-cw" allowfullscreen = "allowfullscreen">
+        </iframe>
+        </div>
+        <div id="videos" style="margin-top: 20px;">
+            <iframe width="420px" height="315px"
+            src="https://www.youtube.com/embed/jWHOF6cFbpw" allowfullscreen = "allowfullscreen">
+            </iframe>
+        </div>
+    </div> 
+
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-success select left" id="prac">
+        <div class="col-md-10 px-0">
+          <h1 class="display-4 ">Practice</h1>
+
+         <!-- <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat fuga repellat in perferendis commodi.</p> -->
+<!--        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+        </div>
+    </div>   
+    
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-warning select left">
+        <div class="whole" style="text-align: center;">
+                        
+            <div style="margin-top: 20px;">
+                <a href="https://mathsmadeeasy.co.uk/gcse-maths-revision/bearings-gcse-revision-and-worksheets/" target="_blank"><button class="btn-lg btn-outline-danger">Bearings</button></a>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <a href="https://www.onlinemath4all.com/solving-word-problems-with-similar-triangles.html" target="_blank"><button class="btn-lg btn-outline-danger">Similarity</button></a>
+            </div>
+        
+            <div style="margin-top: 20px;">
+                <a href="https://www.learncbse.in/congruence-of-triangles-class-7-extra-questions/" target="_blank"><button class="btn-lg btn-outline-danger">Congruence</button></a>
+            </div>
+            
+        </div>
+     </div>  
+  </div> 
+</div>
+
+<script>
+  function goBack() {
+    window.history.back()
+  }
+  </script>
+   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html> 

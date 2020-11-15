@@ -11,10 +11,31 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="shortcut icon" href="img/books.png" type="image/x-icon">
+
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bc8719b568.js" crossorigin="anonymous"></script>
 
     <title>Resource Pool</title>
+
+    <style>
+      .line{
+        position: relative;
+        top: 18px;
+      }
+      .but{
+        position: relative;
+        top: 15px;
+      }
+      @media only screen and (max-width: 545px) {
+        .text-heading{
+          font-size: 40px;
+          font-weight: 325;
+        }
+      }
+      
+    </style>
   </head>
   <body>
 
@@ -27,10 +48,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link px-3" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#">About</a>
-          </li>
+          </li> 
           <li class="nav-item">
             <a class="nav-link px-3" href="feed.html">Feedback</a>
           </li>
@@ -38,43 +56,54 @@
             <a class="nav-link px-3" href="myp4.html">MYP 4</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-3" href="#">MYP 5</a>
+            <a class="nav-link px-3" href="myp5.html">MYP 5</a>
           </li>
         </ul>
       </div>
     </nav>
     
     <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <h1 class="display-4">Resource Pool</h1>
+      <p class="lead">The website provides a <strong>collection of resources</strong> in the form of videos, notes and practice questions.</strong>
+      </p>
     </div>
 
     <div class="big">
       <div class="jumbotron left">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 class="display-4 text-heading">MYP 4</h1>
+        <p class="lead">Resources available for the following subjects:</p>
+        <ol class="lead">
+          <li>Science</li>
+          <li>Math</li>
+          <li>I&S</li>
+        </ol>
         <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">View</a>
       </div>
       <div class="jumbotron middle">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 class="display-4 text-heading">MYP 5</h1>
+        <p class="lead">Resources available for the following subjects:</p>
+        <ol class="lead">
+          <li>Science</li>
+          <li>Math</li>
+          <li>I&S</li>
+        </ol>
         <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">View</a>
       </div>
       <div class="jumbotron right">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <h1 class="display-4">Feedback</h1>
+        <p class="lead ">Any feedback or recommendations are encouraged. Feedback will allow us to provide a better user experience and add more useful content to the website. </p>
+        <ol class="lead">
+        </ol>
+        <hr class="my-4 line">
+        <a class="btn btn-primary btn-lg but" href="#" role="button">Feedback</a>
       </div>
     </div> 
 
     <div class="jumbotron bottom">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <h1 class="display-4 text-heading">Feedback</h1>
+      <p class="lead ">Any feedback or recommendations are encouraged. Feedback will allow us to provide a better user experience and add more useful content to the website. </p>
       <hr class="my-4">
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
